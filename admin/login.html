@@ -1,0 +1,54 @@
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+        <link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript">
+		function loginku(){
+            var x=login.username.value;
+            if(login.username.value==""){
+                        alert("Isi username anda");
+                        login.username.focus();
+						username.focus();
+                        return false;
+            }
+
+		var x=login.password.value;
+            if(login.password.value==""){
+                        alert("Isi password anda");
+                        login.password.focus();
+                        return false;
+            }
+            
+		}
+		</script>
+  </head>
+
+  <body>
+
+    <body bgcolor="#4c4c4c">
+	<br><br><br><br><br><br>
+	<div class="login rizkyabdul2">
+		<div class="login-screen">
+			<div class="app-title">
+				<h1>Admin Login</h1>
+			</div>
+			<div class="login-form">
+			<form action="proses_admin.php" method="post" name="login" onSubmit="return loginku()">
+				<div class="control-group">
+				<input type="text" class="login-field" placeholder="username" name="username" id="username">
+				<label class="login-field-icon fui-user" for="username"></label>
+				</div>
+
+				<div class="control-group">
+				<input type="password" class="login-field" placeholder="password" name="password" id="password">
+				<label class="login-field-icon fui-lock" for="password"></label>
+				</div>
+				
+				<input type="submit" name="login" class="btn btn-primary btn-large btn-block" value="Login"></input>
+			</div>
+		</div>
+	</div>
+</body>   
+</body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Input Data</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/grid.css" />
+</head>
+<body><center>
+<h1>Input Data</h1></center>
+<form action="hasil.php" method="post">
+<table>
+<tr>
+	<td><font color="#ffffff">Name</td>
+	<td>: </font><input type="text" name="order_nama" size="20"></td>
+</tr>
+<tr>
+	<td><font color="#ffffff">Email</td>
+	<td>: </font><input type="text" name="order_email" size="20"></td>
+</tr>
+<tr>
+	<td><font color="#ffffff">Address</td>
+	<td>: </font><input type="text" name="order_alamat" size="20"></td>
+</tr>
+<tr>
+	<td><font color="#ffffff">Telephone</td>
+	<td>: </font><input type="text" name="order_telepon" size="20"></td>
+</tr>
+<tr>
+	<td><font color="#ffffff">Province</td>
+	<td>: </font><input type="text" name="order_provinsi" size="20"></td>
+</tr>
+<tr>
+	<td><font color="#ffffff">City</td>
+	<td>: </font><input type="text" name="order_kota" size="20"></td>
+</tr>
+<tr>
+	<td><font color="#ffffff">Cars</td>
+	<td>: </font><input type="text" name="order_mobil" size="20"></td>
+</tr>
+<tr>
+	<td><font color="#ffffff">Delivery</td>
+	<td>: </font><select name="order_jenis">
+				<option value="Send To Home">Send To Home</option>
+				<option value="Take In Office">Take In Office</option>
+		  </select></td>
+</tr>
+<tr>
+	<td><font color="#ffffff">Cost</td>
+	<td>: <input type="text" name="order_harga" size="20" value="Will be updated by admin" readonly="true"></td>
+</tr>
+<tr>
+	<td><font color="#ffffff">Status</td>
+	<td>: <input type="text" name="order_status" size="20" value="Pending" readonly="true"></td>
+</tr>
+<tr>
+	<td></td>
+	<td><input type="submit" name="send" value="Send">
+	<input type="reset" name="rest" value="Reset"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
